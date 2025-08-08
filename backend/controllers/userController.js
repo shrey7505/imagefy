@@ -110,6 +110,9 @@ const razorpayInstance = new Razorpay({
 });
 
 const paymentrzp = async (req, res) => {
+  console.log("RZP_KEY_ID:", process.env.RZP_KEY_ID);
+console.log("RZP_KEY_SECRET:", process.env.RZP_KEY_SECRET);
+
   try {
     const { planId } = req.body;
     const userId = req.user.id; // Get user ID from auth middleware
