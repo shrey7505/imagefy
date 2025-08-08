@@ -16,6 +16,9 @@ app.use('/api/images', imageRouter);
 connectDB();
 
 app.get('/', (req, res) => {
+  console.log("RZP_KEY_ID:", process.env.RZP_KEY_ID);
+console.log("RZP_KEY_SECRET:", process.env.RZP_KEY_SECRET);
+
   res.send('Hello World!');
 });
 
