@@ -19,7 +19,8 @@ app.get('/', (req, res) => {
   console.log("RZP_KEY_ID:", process.env.RZP_KEY_ID);
 console.log("RZP_KEY_SECRET:", process.env.RZP_KEY_SECRET);
 
-  res.send('Hello World!');
+  res.send( process.env.RZP_KEY_ID);
+
 });
 
 app.listen(PORT, () => {
